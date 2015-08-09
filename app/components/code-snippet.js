@@ -2,7 +2,7 @@ import Ember from "ember";
 import Snippets from "../snippets";
 
 /* global require */
-var Highlight = require('highlight.js');
+var Highlight = window.hljs;
 
 export default Ember.Component.extend({
   tagName: 'pre',
