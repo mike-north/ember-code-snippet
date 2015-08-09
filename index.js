@@ -47,6 +47,7 @@ module.exports = {
   },
 
   included: function(app) {
+    this._super.included.apply(this, arguments);
     app.import('vendor/highlight.js');
     app.import('vendor/highlight-style.css');
   }
